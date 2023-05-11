@@ -20,17 +20,15 @@ The system admits the following analytical solution, which can be later used to 
 
 # Discretization
 
-The time domain is discretized and a medium order polynomial is used to approximate the state and control. The integrals are approximated using the Simpson quadrature and the nonlinear constraints are only evaluated at the grid points. Collectively, this results in a nonlinear optimization problem which can be solved using a off-the-shelf solver. Here, we have used IPOPT for finding the optimal solution. The following figure [^2] illustrates the method, where q represents the discrete control inputs and x the state.
-
-
-
+The time domain is discretized and a medium order polynomial is used to approximate the state and control. The integrals are approximated using the Simpson quadrature and the nonlinear constraints are only evaluated at the grid points. Collectively, this results in a nonlinear optimization problem which can be solved using a off-the-shelf solver. Here, we have used IPOPT for finding the optimal solution. 
 
 # Results
 
 The results are plotted in phase space for a grid size of 50 and they are in close agreement with the analytical solution.
 
+![image](https://github.com/sandeep026/hermite-simpson-collocation--optimal-control/assets/16457676/4ee32144-1d7c-42b2-8d33-6d8dcf4fe342)
 
-
+![image](https://github.com/sandeep026/hermite-simpson-collocation--optimal-control/assets/16457676/7dfb1faf-06d2-43aa-a7a9-2015f52d8899)
 
 # Known issues
 
